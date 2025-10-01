@@ -6,6 +6,8 @@ void setup() {
 void loop() {
   analogWrite(gate,255);       //Ánh xạ giải 0-255 theo mức điện áp từ 0-VCC để điều khiển tốc độ quay động cơ
   delay(2000);                  //Cho quay trong 2 giây
+  analogWrite(gate,120);
+  delay(2000);  
   analogWrite(gate,0);
   delay(2000);
 }
